@@ -13,3 +13,10 @@ export const FriendList = ({ friends }) => (
     })}
   </ul>
 );
+
+// FriendList.propTypes = {
+//   friends: PropTypes.array,
+//   [friend.avatar]: PropTypes.string,
+//   [friend.name]: PropTypes.string,
+//   [friend.isOnline]: PropTypes.boolean,
+// };
