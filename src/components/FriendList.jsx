@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const FriendList = ({ friends }) => (
   <ul>
     {friends.map(friend => {
