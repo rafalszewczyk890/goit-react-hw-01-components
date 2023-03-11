@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 export const Transactions = ({ items }) => (
-  <table class="transaction-history">
+  <table className="transaction-history">
     <thead>
       <tr>
         <th>Type</th>
@@ -12,7 +12,7 @@ export const Transactions = ({ items }) => (
 
     <tbody>
       {items.map(transaction => (
-        <tr>
+        <tr key={transaction.id}>
           <td>{transaction.type}</td>
           <td>{transaction.amount}</td>
           <td>{transaction.currency}</td>
@@ -21,3 +21,7 @@ export const Transactions = ({ items }) => (
     </tbody>
   </table>
 );
+
+Transactions.propTypes = {
+  items: PropTypes.array
+};
