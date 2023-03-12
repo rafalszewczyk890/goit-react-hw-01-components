@@ -11,7 +11,7 @@ export const Transactions = ({ items }) => (
       </tr>
     </thead>
 
-    <tbody>
+    <tbody className={css.tablebody}>
       {items.map(transaction => (
         <tr className={css.transactionrow} key={transaction.id}>
           <td className={css.transactioninfo}>{transaction.type}</td>

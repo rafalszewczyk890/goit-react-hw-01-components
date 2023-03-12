@@ -24,6 +24,14 @@
   border: 2px solid red;
 }
 
+.friendphoto.true:hover {
+  box-shadow: 0px 3px 10px -3px green;
+}
+
+.friendphoto.false:hover {
+  box-shadow: 0px 3px 10px -3px red;
+}
+
 .frienditem {
   margin: 20px;
   display: flex;
