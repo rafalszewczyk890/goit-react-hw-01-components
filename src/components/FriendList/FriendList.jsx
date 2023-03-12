@@ -1,11 +1,25 @@
 import PropTypes from 'prop-types';
+import css from './FriendList.module.css';
+
+const isOnlineColor = value => {
+  if (value.isOnline) {
+    return '4px solid green';
+  } else {
+    return '4px solid red';
+  }
+};
 
 export const FriendList = ({ friends }) => (
-  <ul>
+  <ul className={css.friendlist}>
     {friends.map(friend => {
       return (
-        <li key={friend.id}>
-          <img src={friend.avatar} alt={friend.name}></img>
+        <li className={css.frienditem} key={friend.id}>
+          <img
+            className={css.friendphoto}
+            style={{ border: isOnlineColor(friend) }}
+            src={friend.avatar}
+            alt={friend.name}
+          ></img>
           <p>{friend.name}</p>
           <p>{friend.isOnline}</p>
         </li>

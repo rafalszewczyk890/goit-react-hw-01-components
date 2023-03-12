@@ -1,0 +1,30 @@
+.statistics {
+  font-family: 'Ubuntu', sans-serif;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f6d0;
+  color: #71697a;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: inset 0px 3px 10px -3px rgba(66, 68, 90, 1);
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.item {
+  margin: 10px 20px 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #a0aaa2;
+  padding: 10px;
+  box-shadow: 0px 3px 10px -3px rgba(66, 68, 90, 1);
+  background-color: #d0e1d4;
+}
+
+.statlist {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
