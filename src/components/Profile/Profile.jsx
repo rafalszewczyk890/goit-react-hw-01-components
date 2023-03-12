@@ -10,24 +10,24 @@ export const Profile = ({
 }) => (
   <div className={css.profile}>
     <div className={css.description}>
-      <img src={avatar} alt="User avatar" className={css.avatar} />
+      <img src={avatar} alt={username} className={css.avatar} />
       <p className={css.name}>{username}</p>
-      <p className="tag">@{tag}</p>
-      <p className="location">{location}</p>
+      <p>@{tag}</p>
+      <p>{location}</p>
     </div>
 
     <ul className={css.stats}>
       <li className={css.statitem}>
-        <span className="label">Followers: </span>
-        <span className="quantity">{followers}</span>
+        <span>Followers: </span>
+        <span>{followers}</span>
       </li>
       <li className={css.statitem}>
-        <span className="label">Views: </span>
-        <span className="quantity">{views}</span>
+        <span>Views: </span>
+        <span>{views}</span>
       </li>
       <li className={css.statitem}>
-        <span className="label">Likes: </span>
-        <span className="quantity">{likes}</span>
+        <span>Likes: </span>
+        <span>{likes}</span>
       </li>
     </ul>
   </div>
