@@ -1,0 +1,38 @@
+.transactionhistory {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #775b59;
+  width: fit-content;
+}
+
+.tablehead {
+  display: flex;
+  font-size: x-large;
+  justify-items: auto;
+  margin: 0 auto;
+}
+
+.tableinfo {
+  color: white;
+  background-color: #81a094;
+  margin: 0 auto;
+}
+
+.transactioninfo {
+  padding: 10px 20px 10px 20px;
+}
+
+.transactionrow {
+  background-color: #81a094;
+  color: white;
+  transition: 250ms;
+  font-size: large;
+}
+
+.transactionrow:hover {
+  background-color: #9ae5e6;
+  color: #775b59;
+}
