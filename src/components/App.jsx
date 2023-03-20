@@ -11,6 +11,8 @@ import { FriendList } from './FriendList/FriendList';
 import { Transactions } from './Transactions/Transactions';
 import Counter from './Counter';
 import Toggle from './Toggle';
+import LoginForm from './LoginForm';
+import SignUpForm from './SignUpForm';
 
 class PremiumProfile extends Component {
   name = this.props.name;
@@ -38,7 +40,9 @@ class PremiumProfile extends Component {
 export const App = () => {
   return (
     <div>
-      <Toggle>
+      <SignUpForm onSubmit={values => console.log(values)} />
+      <LoginForm onSubmit={values => console.log(values)} />
+      {/* <Toggle>
         <div>Test Togglera</div>
       </Toggle>
       <Counter step={7} initialValue={3} />
@@ -53,7 +57,7 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
-      <Transactions items={transactions} />
+      <Transactions items={transactions} /> */}
     </div>
   );
 };
